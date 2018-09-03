@@ -1,0 +1,83 @@
+.content{
+	margin-top: 30px;
+	padding: 20px;
+}
+
+.title{
+	margin: 10px auto 20px;
+}
+
+.input-group{
+	margin: 10px auto;
+}
+
+#courses{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#request-buttons > button{
+	margin: 10px;
+}
+
+.info{
+	font-size: 18px;
+}
+
+body.modal-open {
+    overflow: visible;
+}
+
+.ui-widget{
+	border-radius: 5px;
+}
+
+.ui-menu-item-wrapper{
+	border-radius: 5px;
+	font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+table{
+	margin: 0px auto 0px auto;
+	border-collapse: separate;
+	border-spacing: 5px;
+}
+
+th, td{
+	border-radius: 5px;
+	text-align: center;
+	padding: 5px 10px 5px 10px;
+	border: 2px solid black;
+	/*font-family: "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";*/
+	font-size: 20px;
+}
+
+/* "Responsive Design" */
+@media (max-width: 800px){
+	*{
+		font-size: 14px !important;
+	}
+}
+
+@media (max-width: 600px){
+	*{
+		font-size: 12px !important;
+	}
+}
+
+@media (max-width: 500px){
+	*{
+		font-size: 10px !important;
+	}
+}
+
+.dot{
+	font-family: Verdana;
+	font-weight: bold;
+}
+
+.nav-item{
+	background-color: #DDDDDD;
+	border-radius: 10px;
+	margin: 0px 5px 0px 5px;
+}

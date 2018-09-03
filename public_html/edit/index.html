@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/style.css" rel="stylesheet">
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/md5.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/cookie.min.js"></script>
+		<script src="../js/navbar.js"></script>
+		<script src="../edit/script.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand navbar-light bg-light"></nav>
+
+		<div class="container content bg-light">
+			<div class="row">
+				<div class="col">
+					<div class="title">
+						<h2>Edit Information</h2>
+					</div>
+
+					<div class="alert alert-primary" role="alert">
+						Please use your Facebook name to make it easier for others to contact you about course changes.
+					</div>
+
+					<h4>Profile</h4>
+
+					<div class="row">
+						<div class="col">
+							<h5>Name</h5>
+							<input type="text" class="form-control" placeholder="Full Name" id="name">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<h5>Grade</h5>
+							<select id="grade" class="form-control">
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select>
+						</div>
+						<div class="col">
+							<h5>Stream</h5>
+							<select id="stream" class="form-control">
+								<option value="academic">Academic</option>
+								<option value="gifted">Gifted</option>
+								<option value="macs">MaCS</option>
+								<option value="esl">ESL</option>
+								<option value="other">Other</option>
+							</select>
+						</div>
+					</div>
+
+					<hr/>
+					<h4>Courses</h4>
+					<div class="alert alert-warning">
+						Please enter your full <b>8-digit</b> course code without dashes (e.g. ENG4U101).
+						<br/>
+						Please enter <b>SPARE</b> for any spare periods.
+					</div>
+
+					<div class="row" id="courses">
+						<div class="col" style="background-color:#EEEEFF;border-radius:5px;padding:10px;">
+							<h5>Semester 1</h5>
+							<ol>
+								<li><div class="input-group"><input type="text" class="form-control" placeholder="Semester 1, Course 1"></div></li>
+								<li><div class="input-group"><input type="text" class="form-control" placeholder="Semester 1, Course 2"></div></li>
+								<li><div class="input-group"><input type="text" class="form-control" placeholder="Semester 1, Course 3"></div></li>
+								<li><div class="input-group"><input type="text" class="form-control" placeholder="Semester 1, Course 4"></div></li>
+							</ol>
+						</div>
+						<div class="col" style="background-color:#FFEEEE;border-radius:5px;padding:10px;">
+							<h5>Semester 2</h5>
+							<ol>
+								<li><div class="input-group"><input type="text" class="form-control" placeholder="Semester 2, Course 1"></div></li>
+								<li><div class="input-group"><input type="text" class="form-control" placeholder="Semester 2, Course 2"></div></li>
+								<li><div class="input-group"><input type="text" class="form-control" placeholder="Semester 2, Course 3"></div></li>
+								<li><div class="input-group"><input type="text" class="form-control" placeholder="Semester 2, Course 4" id="lastCourse"></div></li>
+							</ol>
+						</div>
+					</div>
+
+					<hr/>
+
+					<h4 style="display:inline">Course Requests</h4> <a href="#request-buttons" id="whats-this">(what's this?)</a>
+
+					<div class="row" id="request-buttons">
+						<button type="button" class="btn btn-primary" id="add">Add</button>
+						<button type="button" class="btn btn-primary" id="remove">Remove</button>
+					</div>
+
+					<div class="row" id="request-titles">
+						<div class="col"><h5>Period</h5></div>
+						<div class="col"><h5>Course Requested</h5></div>
+						<div class="col"><h5>Course to Drop</h5></div>
+					</div>
+
+					<div id="requests"></div>
+
+					<hr/>
+
+					<button type="button" class="btn btn-primary" id="submit">Save</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Header</h5>
+						<button type="button" class="close" data-dismiss="modal">
+							<span>&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Body
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="../css/jquery-ui.min.css" rel="stylesheet">
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/style.css" rel="stylesheet">
+		<link href="../requests/style.css" rel="stylesheet">
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/jquery-ui.min.js"></script>
+		<script src="../js/md5.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/cookie.min.js"></script>
+		<script src="../js/tablesorter.min.js"></script>
+		<script src="../js/navbar.js"></script>
+		<script src="../requests/script.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand navbar-light bg-light"></nav>
+
+		<div class="container-fluid content">
+			<h4>Filters</h4>
+			<div class="row input-group" id="filter">
+				<div class="col">
+					<h5>Period</h5>
+					<select id="period" class="form-control">
+						<option value="any">Any</option>
+						<option value="1">Sem. 1 Period 1</option>
+						<option value="2">Sem. 1 Period 2</option>
+						<option value="3">Sem. 1 Period 3</option>
+						<option value="4">Sem. 1 Period 4</option>
+						<option value="5">Sem. 2 Period 1</option>
+						<option value="6">Sem. 2 Period 2</option>
+						<option value="7">Sem. 2 Period 3</option>
+						<option value="8">Sem. 2 Period 4</option>
+					</select>
+				</div>
+				<div class="col">
+					<h5>Course Requested</h5>
+					<input id="requested" class="form-control" type="text" placeholder="Any Course">
+				</div>
+				<div class="col text-nowrap">
+					<h5>Course Dropping</h5>
+					<input id="dropping" class="form-control" type="text" placeholder="Any Course">
+				</div>
+			</div>
+		</div>
+
+		
+		<div class="container-fluid content" id="table-filtered">
+			<h4>Matched Results</h4>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Grade</th>
+						<th>Period</th>
+						<th>Requesting</th>
+						<th>Dropping</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+
+		<div class="container-fluid content" id="table-main">
+			<h4>Everyone Else</h4>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Grade</th>
+						<th>Period</th>
+						<th>Requesting</th>
+						<th>Dropping</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+
+		<div class="modal fade" id="modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Header</h5>
+						<button type="button" class="close" data-dismiss="modal">
+							<span>&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Body
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

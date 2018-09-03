@@ -1,0 +1,19 @@
+td:first-child{
+	background-color: beige;
+}
+
+th:nth-child(1){
+	background-color: #FFFFDD;
+}
+
+th:nth-child(2){
+	background-color: #DDFFDD;
+}
+
+th:nth-child(3), th:nth-child(4), th:nth-child(5), th:nth-child(6){
+	background-color: #DDFFFF;
+}
+
+th:nth-child(7), th:nth-child(8), th:nth-child(9), th:nth-child(10){
+	background-color: #FFDDDD;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link href="../css/jquery-ui.min.css" rel="stylesheet">
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/style.css" rel="stylesheet">
+		<link href="../shared/style.css" rel="stylesheet">
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/jquery-ui.min.js"></script>
+		<script src="../js/md5.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<script src="../js/cookie.min.js"></script>
+		<script src="../js/tablesorter.min.js"></script>
+		<script src="../js/navbar.js"></script>
+		<script src="../shared/script.js"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand navbar-light bg-light"></nav>
+
+		<div class="container-fluid content">
+			<h4>Shares classes with:</h4>
+			<div class="row input-group">
+				<select class="form-control" id="who">
+					<option value="none">Choose a person...</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="container-fluid content" id="table-main">
+			<table>
+				<thead>
+					<tr>
+						<th>Shared</th>
+						<th>Name</th>
+						<th>Grade</th>
+						<th>S1 P1</th>
+						<th>S1 P2</th>
+						<th>S1 P3</th>
+						<th>S1 P4</th>
+						<th>S2 P1</th>
+						<th>S2 P2</th>
+						<th>S2 P3</th>
+						<th>S2 P4</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+
+		<div class="modal fade" id="modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Header</h5>
+						<button type="button" class="close" data-dismiss="modal">
+							<span>&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Body
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
